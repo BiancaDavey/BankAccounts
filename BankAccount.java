@@ -1,7 +1,7 @@
-public abstract class BananaBankAccount {
+public abstract class BankAccount {
 
     /**
-        This program simulates a bank account and provides methods for storing the balance and making and recording deposits and withdrawals, with BananaBankAccount being an abstract superclass.
+        This program simulates a bank account and provides methods for storing a balance and making and recording deposits and withdrawals, with BankAccount being an abstract superclass.
         @param balance a double to hold the account balance.
         @param numDeposits an integer value to hold the number of deposits.
         @param numWithdrawals an integer value to hold the number of withdrawals.
@@ -12,16 +12,16 @@ public abstract class BananaBankAccount {
     public int numWithdrawals;
 
     /**
-        The BananaBankAccount Constructor initialises the balance of bananas.
+        The BankAccount Constructor initialises the balance.
         @param b a double value representing the balance.
      */
     
-    public BananaBankAccount(double b){  // OR BananaBankBalance() and balance = 0.0
+    public BankAccount(double b){  // OR BankBalance() and balance = 0.0
         balance = b;
     }
 
     /**
-        The toString method overrides the toString method of the java object class and returns the balance field in a string.
+        The toString method overrides the toString method of the Java object class and returns the balance field in a string.
      */
 
     public String toString(){
@@ -31,16 +31,16 @@ public abstract class BananaBankAccount {
     }
 
     /**
-        The equals method overrides the java object class's equals method and uses a boolean flag and an if statement to return true if any account matches the captain's balance of bananas.
-        @param account2 a SavingsAccount object representing the account to compare to the captain's.
-        @param match a boolean value used as a flag to return true if an account matches the captain's in balance.
+        The equals method overrides the Java object class's equals method and uses a boolean flag and an if statement to return true if any account matches the captain's balance of bananas.
+        @param compareAccount a SavingsAccount object representing the account to compare.
+        @param match a boolean value used as a flag to return true if an account matches the comparison account in balance.
         @return the match field is returned.
      */
 
     //@Override
-    public boolean equals(SavingsAccount account2){
+    public boolean equals(SavingsAccount compareAccount){
         boolean match;
-        if ((balance > account2.balance) || (balance < account2.balance))
+        if ((balance > compareAccount.balance) || (balance < compareAccount.balance))
             match = false;
         else   
             match = true;
