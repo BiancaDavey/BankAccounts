@@ -1,90 +1,45 @@
-/**
-   Demo program for the SavingsAccount class
-   Dr. Edmund Sadgrove, UNE, Australia
-   COSC120, Assignment P3
-*/
-
 public class SavingsAccountDemo
 {
+    /**
+        This program demonstrates the SavingsAccount class by creating class objects and calling the methods of the class.
+    */
+
    public static void main(String[] args)
    {
-      
-      // Create a SavingsAccount object for each client, with intial balances.
-      SavingsAccount captainMorgan = 
-                   new SavingsAccount(10.0, "Captain","Morgan");
-      SavingsAccount johnSmith = 
-                   new SavingsAccount(5.0, "John","Smith");
-      SavingsAccount randolfOliver = 
-                   new SavingsAccount(10.0, "Randolf","Oliver");
+        // Create SavingsAccount objects.
+
+        SavingsAccount account1 = new SavingsAccount(520, "John","Smith", true);  
+        SavingsAccount account2 = new SavingsAccount(770, "Ellen","Jones", false);   
 				   
-      // Display account details.
-      System.out.println(captainMorgan);
-      System.out.println("Number of deposits: " + 
-                         captainMorgan.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         captainMorgan.getNumWithdrawals());
-      System.out.println();
+        // Demonstrating getNumDeposits and getNumWithdrawals methods to display account details.
+
+        System.out.println(account1);
+        System.out.println("Number of deposits: " + account1.getNumDeposits());
+        System.out.println("Number of withdrawals: " + account1.getNumWithdrawals());
+        System.out.println();
+
+        // Comparing account balances using equals method.
+
+        if(account1.equals(account2)) {
+            System.out.println(account1.getName() + " has an equal balance to " + account2.getName());
+        }
+        else {
+            System.out.println(account1.getName() + " does not have an equal balance to " + account2.getName());
+        }
 	  
-      System.out.println(johnSmith);
-      System.out.println("Number of deposits: " + 
-                         johnSmith.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         johnSmith.getNumWithdrawals());
-      System.out.println();
-	  
-      System.out.println(randolfOliver);
-      System.out.println("Number of deposits: " + 
-                         randolfOliver.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         randolfOliver.getNumWithdrawals());
-      System.out.println();
-      
-	  // Check if any other accounts match Captain Morgon.
-      if(captainMorgan.equals(randolfOliver))
-		  System.out.println(randolfOliver.getName()+ " has the same balance as " + captainMorgan.getName());
-      else
-          System.out.println(randolfOliver.getName()+ " does not have the same balance as " + captainMorgan.getName());
-      if(captainMorgan.equals(johnSmith))
-          System.out.println(johnSmith.getName()+ " has the same balance as " + captainMorgan.getName());
-      else
-          System.out.println(johnSmith.getName()+ " does not have the same balance as " + captainMorgan.getName());
-	  
-      // Make some deposits.
-      captainMorgan.deposit(5.00);
-      captainMorgan.deposit(5.00);
-      randolfOliver.deposit(5.00);
-      johnSmith.deposit(5.00);
-	  
-	  // Make some withdrawals.
-      captainMorgan.withdraw(5.00);
-      captainMorgan.withdraw(5.00);
-      captainMorgan.withdraw(5.00);
-      randolfOliver.withdraw(5.00);
-      johnSmith.withdraw(5.00);
-	  
-      
-	  // Display account details after transactions.
-      System.out.println();
-      System.out.println(captainMorgan);
-      System.out.println("Number of deposits: " + 
-                         captainMorgan.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         captainMorgan.getNumWithdrawals());
-      System.out.println();
-	  
-      System.out.println(johnSmith);
-      System.out.println("Number of deposits: " + 
-                         johnSmith.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         johnSmith.getNumWithdrawals());
-      System.out.println();
-	  
-      System.out.println(randolfOliver);
-      System.out.println("Number of deposits: " + 
-                         randolfOliver.getNumDeposits());
-      System.out.println("Number of withdrawals: " + 
-                         randolfOliver.getNumWithdrawals());
-      System.out.println();
-      
-   }
+        // Demonstrating deposit and withdraw methods.
+
+        account1.deposit(100.00);    
+        account1.withdraw(50.00);
+        account1.withdraw(15.70);
+
+        // Demonstrating getNumDeposits and getNumWithdrawals methods to display account details after transactions are completed.
+
+        System.out.println(account1);
+        System.out.println("Number of deposits: " + account1.getNumDeposits());
+        System.out.println("Number of withdrawals: " + account1.getNumWithdrawals());
+        System.out.println();
+   
+    }
+
 }
