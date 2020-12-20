@@ -1,15 +1,17 @@
-public class SavingsAccount extends BananaBankAccount {
+public class SavingsAccount extends BankAccount {
 
     /**
-        This class extends the BananaBankAccount class to create a subclass type of account and provide methods specifically for this type of account.
+        This class extends the BankAccount class to create a subclass type of account and provide methods specifically for this type of account.
         @param firstName a String to hold the first name associated with a SavingsAccount.
         @param lastName a String to hold the last name associated with a SavingsAccount.
         @param TRANSACTION_FEE a final double value to hold the regular transaction fee applying to withdrawals.
+        @param currentStudent a Boolean value representing the account holder being a current student or not.  // NEW
      */
 
     public String firstName;
     public String lastName;
     final double TRANSACTION_FEE = -0.5;
+    public Boolean currentStudent = false;  // NEW
 
     /**
         The SavingsAccount Constructor initialises the savings account with a balance, first name and last name.
@@ -17,12 +19,14 @@ public class SavingsAccount extends BananaBankAccount {
         @param b a double representing the value for the superclass balance field.
         @param fn a String representing the value for the first name field.
         @param ln a String representing the value for the last name field.
+        @param s a Boolean representing the value of the account holder's student status.
      */
 
-    public SavingsAccount(double b, String fn, String ln){
+    public SavingsAccount(double b, String fn, String ln, Boolean s){
         super(b);
         firstName = fn;
         lastName = ln;
+        currentStudent = s;
     }
 
     /**
@@ -34,7 +38,7 @@ public class SavingsAccount extends BananaBankAccount {
 
     public void withdraw(double w){
         double appliedTransactionFee;
-        if ((firstName == "Captain") && (lastName == "Morgan"))
+        if ((firstName == "Captain") && (lastName == "Morgan"))  // TODO: Fix. Applies to specific accounts. Make it about student status, under 18 child account.
             appliedTransactionFee = 0.0;
         else if ((firstName.startsWith("J")) && (lastName.startsWith("S")))
             appliedTransactionFee = -1.0;
