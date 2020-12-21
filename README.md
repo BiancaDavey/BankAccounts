@@ -1,10 +1,16 @@
 # Bank Accounts
 
-Bank Accounts is a program enabling the creation of bank account objects and speciality savings account objects through the utilisation of a superclass and subclass. This program provides methods for creating an account, initializing details, making withdrawals and deposits, displaying the total number of transactions, applying different transaction fees according to account type, and comparing account balances.
+Bank Accounts is a program simulating the creation of bank account and speciality savings accounts through superclass and subclass objects. This program provides methods enabling account management, including making withdrawals and deposits, comparing account balances and calculating applicable transaction fees.
 
 ## Features
 
-* Add features
+* BankAccount superclass 
+* SavingsAccount subclass
+* Methods for making withdrawals and deposits
+* Applicable transaction fees and updated total balance calculated automatically
+* Ability to compare account balances
+* Clear display of account status
+
 
 ## Installation
 
