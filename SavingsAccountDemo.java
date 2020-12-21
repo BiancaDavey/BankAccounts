@@ -17,15 +17,6 @@ public class SavingsAccountDemo
         System.out.println("Number of deposits: " + account1.getNumDeposits());
         System.out.println("Number of withdrawals: " + account1.getNumWithdrawals());
         System.out.println();
-
-        // Comparing account balances using equals method.
-
-        if(account1.equals(account2)) {
-            System.out.println(account1.getName() + " has an equal balance to " + account2.getName());
-        }
-        else {
-            System.out.println(account1.getName() + " does not have an equal balance to " + account2.getName());
-        }
 	  
         // Demonstrating deposit and withdraw methods.
 
@@ -39,6 +30,15 @@ public class SavingsAccountDemo
         System.out.println("Number of deposits: " + account1.getNumDeposits());
         System.out.println("Number of withdrawals: " + account1.getNumWithdrawals());
         System.out.println();
+
+        // Comparing account balances using equals method.
+
+        if(account1.equals(account2)) {
+            System.out.println(account1.getName() + " has an equal balance to " + account2.getName() + ".");
+        }
+        else {
+            System.out.println(account1.getName() + " does not have an equal balance to " + account2.getName() + ".");
+        }
    
     }
 
