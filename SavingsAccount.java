@@ -30,7 +30,7 @@ public class SavingsAccount extends BankAccount {
     }
 
     /**
-        The withdraw method uses if else if statements to check for matches in the first and last name fields of the SavingsAccount objbect and returns the applicable transaction fee value.
+        The withdraw method checks the student status of the account holder in order to set the applicable transaction fee.
         The superclass's withdraw method is called to further subtract the applicable transaction fee from the withdrawal amount.
         @param w a double representing the withdrawal amount.
         @param appliedTransactionFee a double representing the applicable transaction fee for specified account matches based on the first name and last name fields.
@@ -38,12 +38,12 @@ public class SavingsAccount extends BankAccount {
 
     public void withdraw(double w){
         double appliedTransactionFee;
-        if ((firstName == "Captain") && (lastName == "Morgan"))  // TODO: Fix. Applies to specific accounts. Make it about student status, under 18 child account.
-            appliedTransactionFee = 0.0;
-        else if ((firstName.startsWith("J")) && (lastName.startsWith("S")))
-            appliedTransactionFee = -1.0;
-        else
+        if (currentStudent){
+            appliedTransactionFee = 0.1;  // Transaction fee is reduced according to student status of the account holder. 
+        }
+        else {
             appliedTransactionFee = TRANSACTION_FEE;
+        }
         super.withdraw(w -= appliedTransactionFee);
     }
 
