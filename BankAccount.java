@@ -31,7 +31,7 @@ public abstract class BankAccount {
     }
 
     /**
-        The equals method overrides the Java object class's equals method and uses a boolean flag and an if statement to return true if any account matches the captain's balance of bananas.
+        The equals method overrides the Java object class's equals method and uses a boolean flag and an if statement to return true if the balances of the two accounts specified are equal.
         @param compareAccount a SavingsAccount object representing the account to compare.
         @param match a boolean value used as a flag to return true if an account matches the comparison account in balance.
         @return the match field is returned.
@@ -55,6 +55,7 @@ public abstract class BankAccount {
     public void deposit(double d){
         balance += d;
         numDeposits++;
+        System.out.println("Deposit of: $" + d + " complete.\n");
     }
 
     /**
@@ -65,6 +66,7 @@ public abstract class BankAccount {
     public void withdraw(double w){
         balance -= w;
         numWithdrawals++;
+        System.out.println("Withdrawal of: $" + w + " complete.\n");
     }
 
     /**
