@@ -18,7 +18,7 @@ Java is required to run this program.
 
 ## Usage
 
-1. Create new SavingsAccount objects by opening and editing the SavingsAccountDemo program with the command `nano SavingsAccountDemo.java`.
+1. Open the SavingsAccountDemo program with the command `nano SavingsAccountDemo.java` to create new SavingsAccount objects.
 2. Compile the classes with the commands `javac BankAccount.java` and `javac SavingsAccount.java`.
 3. Compile the demonstration program with the command `javac SavingsAccountDemo.java`.
 4. Run the program with the command `java SavingsAccountDemo`.
@@ -26,6 +26,9 @@ Java is required to run this program.
 ## Usage example
 
 ```
+nano SavingsAccountDemo.java
+[![Savings-Account-Create-Objects.png](https://i.postimg.cc/P5zz2Kvy/Savings-Account-Create-Objects.png)](https://postimg.cc/SnRMK6rY)
+
 java SavingsAccountDemo
 [![Savings-Account-Demo.png](https://i.postimg.cc/yN4h1cmt/Savings-Account-Demo.png)](https://postimg.cc/k2sRwVhv)
 
