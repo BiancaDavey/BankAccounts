@@ -27,12 +27,14 @@ Java is required to run this program.
 
 ```
 nano SavingsAccountDemo.java
+```
 [![Savings-Account-Create-Objects.png](https://i.postimg.cc/P5zz2Kvy/Savings-Account-Create-Objects.png)](https://postimg.cc/SnRMK6rY)
 
+```
 java SavingsAccountDemo
+```
 [![Savings-Account-Demo.png](https://i.postimg.cc/yN4h1cmt/Savings-Account-Demo.png)](https://postimg.cc/k2sRwVhv)
 
-```
 
 ## Author
 
