@@ -14,23 +14,20 @@ Bank Accounts is a program simulating the creation of bank account and specialit
 
 ## Installation
 
-Java API is required to run this program.
+Java is required to run this program.
 
 ## Usage
 
-```java
-# Compile each file and launch the demonstration class to use the program.
-javac BankAccount.java
-javac SavingsAccount.java
-javac SavingsAccountDemo.java
-java SavingsAccountDemo
-```
+1. Create new SavingsAccount objects by opening and editing the SavingsAccountDemo program with the command `nano SavingsAccountDemo.java`.
+2. Compile the classes with the commands `javac BankAccount.java` and `javac SavingsAccount.java`.
+3. Compile the demonstration program with the command `javac SavingsAccountDemo.java`.
+4. Run the program with the command `java SavingsAccountDemo`.
 
 ## Usage example
 
 ```
 java SavingsAccountDemo
-*TODO: add image.
+[![Savings-Account-Demo.png](https://i.postimg.cc/yN4h1cmt/Savings-Account-Demo.png)](https://postimg.cc/k2sRwVhv)
 
 ```
 
