@@ -33,7 +33,7 @@ nano SavingsAccountDemo.java
 ```
 java SavingsAccountDemo
 ```
-[![Savings-Account-Demo.png](https://i.postimg.cc/yN4h1cmt/Savings-Account-Demo.png)](https://postimg.cc/k2sRwVhv)
+[![Savings-Account-Demo.png](https://i.postimg.cc/d0ZQJNRm/Savings-Account-Demo.png)](https://postimg.cc/HJH122hV)
 
 
 ## Author
